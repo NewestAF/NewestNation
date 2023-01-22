@@ -1,9 +1,11 @@
 package com.newestaf.newestnation.util.impl
 
 import com.newestaf.newestnation.util.DirectoryStructure
+import org.koin.core.annotation.Single
 import java.io.File
 import java.util.*
 
+@Single(binds = [DirectoryStructure::class])
 class DirectoryStructureImpl : DirectoryStructure {
 
     private val pluginName = "NewestNation"
